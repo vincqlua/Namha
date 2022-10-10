@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+wait(1)
+local Window = Library.CreateLib("Namha Hub", "Ocean")
+
+--MainHub
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Welcome to Namha Hub!")
+MainSection:NewLabel("Click to >Scripts< to start!")
+
+local Script = Window:NewTab("Scripts")
+local About = Window:NewTab("About")
+
+local ScriptSection = Script:NewSection("Scripts!")
+local PlayerSection = Script:NewSection("Player Scripts!")
+
+
+
+--Buttons script sections
+ScriptSection:NewButton("Doors!", "Doors script (WIP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+ScriptSection:NewButton("Arsenal!", "Arsenal script (WIP)", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+ScriptSection:NewButton("Murder Mystery 2!", "MM2 script (WIP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+ScriptSection:NewButton("Animation Changer!", "AC FE GUI script (WIP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vincqlua/ACgui/main/ac.lua", true))()
+end)
+ScriptSection:NewButton("Evade!", "Evade script (WIP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Robobo2022/script/main/EVADE.lua"))()
+end)
+ScriptSection:NewButton("Rainbow Friends!", "Rainbow friends script (WIP)", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ') 
+end)
+ScriptSection:NewButton("Admin Commands!", "Admin! script (WIP)", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+ScriptSection:NewButton("Kick!", "Get kicked! script (WIP)", function()
+	wait(3)
+    game.Players.LocalPlayer:Kick("Why?")
+end)
+
+PlayerSection:NewSlider("Speed", "Change your speed from 0 to 200", 200, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
