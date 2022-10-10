@@ -1,3 +1,5 @@
+-- Open source gui?
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 wait(1)
 local Window = Library.CreateLib("Namha Hub", "Ocean")
