@@ -1,5 +1,3 @@
--- Open source gui?
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 wait(1)
 local Window = Library.CreateLib("Namha Hub", "Ocean")
@@ -39,9 +37,9 @@ end)
 ScriptSection:NewButton("Admin Commands!", "Admin! script (WIP)", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-ScriptSection:NewButton("Kick!", "Get kicked! script (WIP)", function()
+ScriptSection:NewButton("Ban!", "Get kicked! script (WIP)", function()
 	wait(3)
-    game.Players.LocalPlayer:Kick("Why?")
+    game.Players.LocalPlayer:Kick("Banned! Stop Using Exploit! Time: 999999999 Days")
 end)
 
 PlayerSection:NewSlider("Speed", "Change your speed from 0 to 200", 200, 0, function(s)
